@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Courses">
+
+    <Button
+        android:id="@+id/attendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="@font/broshk"
+        android:text="@string/attend"
+        android:textColor="@color/blue_ivy"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/down_image"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_down" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/attendBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/courseImageLogo"
+            android:layout_width="64dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="@string/android_title"
+            android:src="@mipmap/ic_android" />
+
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="300dp"
+            android:background="@mipmap/ic_more"
+            android:contentDescription="@string/more" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="370dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/publicRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_selector"
+                android:fontFamily="@font/broshk"
+                android:onClick="onRadioButtonClicked"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="@string/course_public"
+                android:textColor="@color/dark" />
+
+            <RadioButton
+                android:id="@+id/privateRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:button="@drawable/radio_selector"
+                android:fontFamily="@font/broshk"
+                android:onClick="onRadioButtonClicked"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="@string/course_private"
+                android:textColor="@color/dark" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/broshk"
+            android:text="@string/course_information" />
+
+        <TextView
+            android:id="@+id/courseDescInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/broshk"
+            android:text="@string/course_info_desc"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/broshk"
+            android:text="@string/title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="340dp"
+            android:drawableStart="@drawable/dollar_symbol"
+            android:fontFamily="@font/broshk"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/dateOfCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/broshk"
+            android:text="@string/date"
+            android:textAlignment="center"
+            android:textColor="@color/green" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Clever Mind Pob ICT</string>
+    <string name="splash_text">CLEVER WAY</string>
+    <string name="ict">ICT. 2019</string>
+    <string name="splash_image">CLEVER MIND POB</string>
+    <string name="user_name">USERNAME</string>
+    <string name="android_title">ANDROID</string>
+    <string name="password">PASSWORD</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="rate_warn">Submit Rate ?</string>
+    <string name="forget_password">FORGETPASSWORD?</string>
+    <string name="no_account">DON\'T HAVE ACCOUNT?</string>
+    <string name="sign_up">SIGN-UP</string>
+    <string name="change">CHANGE</string>
+    <string name="soon">SOON !</string>
+    <string name="cancel">CANCEL COURSE</string>
+    <string name="login_button">LOG IN BUTTON</string>
+    <string name="signup_info">PERSONAL INFORMATION</string>
+    <string name="signup_name">FULL NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="share">SHARE ICON</string>
+    <string name="latest_news">LATEST NEWS</string>
+    <string name="attended">ATTENDED</string>
+    <string name="android_training">ANDROID FULL TRACK DEVELOPMENT</string>
+    <string name="experience">2 YEARS EXPERIENCE</string>
+    <string name="phone_no">PHONE NUMBER</string>
+    <string name="edit">EDIT</string>
+    <string name="attend_now">ATTEND NOW</string>
+    <string name="birthdate">DATE OF BIRTH</string>
+    <string name="card_news_image">CARD NEWS IMAGE</string>
+    <string name="back_arrow">BACK ARROW</string>
+    <string name="down_image">DOWN IMAGE</string>
+    <string name="card_text_news">LAST UPDATES OF DEVELOPMENT </string>
+    <string name="card_title">GOOGLE</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="old_password">OLD PASSWORD</string>
+    <string name="next">NEXT IMAGE</string>
+    <string name="train_center">TRAINING CENTER</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="re_password">RE-PASSWORD</string>
+    <string name="language">LANGUAGE</string>
+    <string name="english">EN</string>
+    <string name="Attended_section">ATTENDED COURSES AND TRAINING\n SECTION</string>
+    <string name="android_tr_date">SUN-THU\n 10:00AM-01:00PM</string>
+    <string name="arabic">AR</string>
+    <string name="rate">RATE US</string>
+    <string name="feedback">FEEDBACK</string>
+    <string name="send">SEND</string>
+    <string name="more">MORE DOT</string>
+    <string name="latest_event">LATEST EVENT</string>
+    <string name="jobs">JOBS</string>
+    <string name="log_out">LOGOUT</string>
+    <string name="menu_draw">MENU DRAWER</string>
+    <string name="settings">SETTINGS</string>
+    <string name="privacy_policy">POLICY &amp; PRIVACY</string>
+    <string name="card_number">CARD NUMBER</string>
+    <string name="expiration">EXPIRATION</string>
+    <string name="cv">CV</string>
+    <string name="quote">WORK HARDER, PROUD LATER</string>
+    <string name="inspiration">INSPIRATION QUOTE OF TODAY</string>
+    <string name="save">SAVE</string>
+    <string name="title">ANDROID FULL TRACK DEVELOPMENT</string>
+    <string name="bell">BELL</string>
+    <string name="date">SUN-THU \n 10:00AM-01:00PM</string>
+    <string name="profile">PROFILE</string>
+    <string name="payment">PAYMENT</string>
+    <string name="attend">ATTEND NOW</string>
+    <string name="position">ANDROID DEVELOPER</string>
+    <string name="price">PRICE: 150JD</string>
+    <string name="course_information">COURSE INFORMATION</string>
+    <string name="course_info_desc">ADVANCED ANDROID DEVELOPMENT\n IN THE ADVANCED ANDROID DEVELOPMENT TRAINING, YOU\n
+    TAKE YOUR ANDROID CODING SKILLS TO THE NEXT LEVEL.\n THE COURSE TEACHES YOU WAYS TO EXPAND THE USER\n EXPERIENCE, IMPROVE YOUR APP\'S PERFORMANCE, AND\n
+    ADD ADVANCED FEATURES LIKE CUSTOM VIEWS,\n ANIMATIONS, AND LOCATION-AWARENESS. EACH LESSON\n INCLUDE TUTORIAL WITH SOLUTION CODE IN GITHUB,\n CONCEPT DOCUMENTATION, AND A SLIDE DECK.</string>
+
+    <string name="course_public">PUBLIC</string>
+
+    <string name="news_title">GOOGLE</string>
+
+    <string name="news_subtitle"> LAST UPDATE OF DEVELOPMENTS</string>
+
+    <string name="news_desc">WHAT IS MOBILEGEDDON &amp; THE GOOGLE MOBILE FRIENDLY UPDATE\n ON APRIL 21,2015, GOOGLE RELEASED A SIGNIFICANT NEW MOBILE-FRIENDLY RANKING ALGORITHM THAT\'S DESIGNED TO GIVE A BOOST TO MOBILE-FRIENDLY PAGES
+    ON GOOGLE\'S MOBILES SEARCH RESULTS</string>
+
+    <string name="course_private">PRIVATE</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+</resources>

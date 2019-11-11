@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/profileScreen"
+        android:title="@string/profile"/>
+
+    <item android:id="@+id/attendedScreen"
+        android:title="@string/attended"/>
+
+    <item android:id="@+id/latestEventScreen"
+        android:title="@string/latest_event"/>
+
+    <item android:id="@+id/jobsScreen"
+        android:title="@string/jobs"/>
+
+    <item android:id="@+id/settingsScreen"
+        android:title="@string/settings"/>
+
+    <item android:id="@+id/paymentScreen"
+        android:title="@string/payment"/>
+
+    <item android:id="@+id/privacyPolicyScreen"
+        android:title="@string/privacy_policy"/>
+
+    <item android:id="@+id/logOut"
+        android:title="@string/log_out" android:icon="@drawable/log_out" />
+
+</menu>

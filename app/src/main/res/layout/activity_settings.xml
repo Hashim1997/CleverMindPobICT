@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Settings">
+
+    <Button
+        android:id="@+id/arabic"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="101dp"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="@font/broshk"
+        android:text="@string/arabic"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/feedBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/english"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/english"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/button_lang_style"
+        android:fontFamily="@font/broshk"
+        android:text="@string/english"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/arabic"
+        app:layout_constraintEnd_toStartOf="@+id/arabic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/arabic" />
+
+    <Button
+        android:id="@+id/submitFeed"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/send_button_style"
+        android:fontFamily="@font/broshk"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/feedBack"
+        app:layout_constraintStart_toStartOf="@+id/feedBack"
+        app:layout_constraintTop_toBottomOf="@+id/feedBack" />
+
+    <Button
+        android:id="@+id/changePassword"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/send_button_style"
+        android:fontFamily="@font/broshk"
+        android:text="@string/change"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/redPassWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/redPassWord"
+        app:layout_constraintTop_toBottomOf="@+id/oldPassWord" />
+
+    <EditText
+        android:id="@+id/feedBack"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="7"
+        android:gravity="start|top"
+        android:hint="@string/feedback"
+        android:inputType="textMultiLine"
+        android:transformPivotX="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitFeed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arabic"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/newPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="8"
+        android:fontFamily="@font/broshk"
+        android:hint="@string/new_password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/redPassWord"
+        app:layout_constraintEnd_toStartOf="@+id/changePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldPassWord"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/oldPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="8"
+        android:fontFamily="@font/broshk"
+        android:hint="@string/old_password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/newPassWord"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/redPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="8"
+        android:fontFamily="@font/broshk"
+        android:hint="@string/re_password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/changePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPassWord"
+        android:importantForAutofill="no" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="205dp"
+        android:contentDescription="@string/more"
+        app:layout_constraintBottom_toTopOf="@+id/arabic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_more" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/blue_ivy"
+        android:progressTint="@color/white"
+        android:stepSize="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/broshk"
+        android:text="@string/change_password"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/oldPassWord"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="61dp"
+        android:fontFamily="@font/broshk"
+        android:text="@string/language"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redPassWord" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/broshk"
+        android:text="@string/feedback"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/feedBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/broshk"
+        android:text="@string/rate"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintStart_toStartOf="@+id/english"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="66dp"
+        android:fontFamily="@font/broshk"
+        android:text="@string/settings"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settingBack"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/back_arrow"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

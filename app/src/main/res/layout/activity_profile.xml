@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignUp">
+
+    <EditText
+        android:id="@+id/fullNameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="171dp"
+        android:background="@drawable/edit_text_style"
+        android:drawableStart="@drawable/ic_pen"
+        android:ems="10"
+        android:fontFamily="@font/broshk"
+        android:hint="@string/signup_name"
+        android:inputType="textPersonName"
+        android:padding="3dp"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textColorHint="@color/dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/userNameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_style"
+        android:drawableStart="@drawable/users_24x24"
+        android:ems="10"
+        android:fontFamily="@font/broshk"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/dark"
+        app:layout_constraintStart_toStartOf="@+id/fullNameProfile"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameProfile"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/emailProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:background="@drawable/edit_text_style"
+        android:drawableStart="@drawable/ic_email"
+        android:ems="10"
+        android:fontFamily="@font/broshk"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/dark"
+        app:layout_constraintStart_toStartOf="@+id/userNameProfile"
+        app:layout_constraintTop_toBottomOf="@+id/userNameProfile"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/phoneNoProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:background="@drawable/edit_text_style"
+        android:drawableStart="@drawable/ic_phone"
+        android:ems="10"
+        android:fontFamily="@font/broshk"
+        android:hint="@string/phone_no"
+        android:inputType="phone"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/dark"
+        app:layout_constraintStart_toStartOf="@+id/passWordProfile"
+        app:layout_constraintTop_toBottomOf="@+id/passWordProfile"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/birthDateProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:background="@drawable/edit_text_style"
+        android:drawableStart="@drawable/ic_birthday"
+        android:ems="10"
+        android:fontFamily="@font/broshk"
+        android:hint="@string/birthdate"
+        android:inputType="date"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/dark"
+        app:layout_constraintStart_toStartOf="@+id/phoneNoProfile"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNoProfile"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/passWordProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:background="@drawable/edit_text_style"
+        android:drawableStart="@drawable/shield_24x24"
+        android:ems="10"
+        android:fontFamily="@font/broshk"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/dark"
+        app:layout_constraintStart_toStartOf="@+id/emailProfile"
+        app:layout_constraintTop_toBottomOf="@+id/emailProfile"
+        android:importantForAutofill="no" />
+
+    <ImageView
+        android:id="@+id/saveBtnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="143dp"
+        android:clickable="true"
+        android:contentDescription="@string/login_button"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNoProfile"
+        app:srcCompat="@mipmap/ic_save" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="93dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="35dp"
+        android:contentDescription="@string/profile"
+        android:src="@mipmap/ic_profile"
+        app:layout_constraintBottom_toTopOf="@+id/fullNameProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/bell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bell25" />
+
+    <ProgressBar
+        android:id="@+id/saveLoading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/saveBtnProfile"
+        app:layout_constraintStart_toStartOf="@+id/saveBtnProfile" />
+
+    <TextView
+        android:id="@+id/editStatues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="@font/broshk"
+        android:text="@string/edit"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/saveBtnProfile"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtnProfile" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/broshk"
+        android:text="@string/signup_info"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/broshk"
+        android:text="@string/profile"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="@font/broshk"
+        android:padding="10dp"
+        android:text="@string/quote"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/broshk"
+        android:text="@string/inspiration"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/textView18" />
+
+    <ImageView
+        android:id="@+id/profileBack"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/back_arrow"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

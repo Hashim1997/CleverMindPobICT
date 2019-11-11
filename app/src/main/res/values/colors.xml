@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="dark">#545454</color>
+    <color name="blue">#0000ff</color>
+    <color name="turquoise">#40E0D0</color>
+    <color name="green">#a4c639</color>
+    <color name="blue_ivy">#3090C7</color>
+    <color name="olive">#808000</color>
+    <color name="gray">#DCDCDC</color>
+    <color name="medium_purple">#9370DB</color>
+
+</resources>
