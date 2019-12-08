@@ -9,7 +9,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/clever_mind_launcher"
+        android:icon="@mipmap/ic_launcher_clever_mind"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_clever_mind_circle"
         android:supportsRtl="true"
